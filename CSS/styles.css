@@ -1,0 +1,225 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --primaryColor: #393E46;
+    --secondaryColor: #222831;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--secondaryColor);
+    margin-top: 4rem;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    background-color: #00ADB5;
+    transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+    color: #EEEEEE;
+}
+
+.project-img {
+    width: 35rem;
+    border-radius: 10px;
+}
+
+#about {
+    height: 100vh;
+    background-color: var(--secondaryColor);
+}
+
+#navbar {
+    background-color: #00ADB5;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100vw;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+}
+
+#navbar ul a:hover {
+    color: #222831;
+}
+
+#about .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+#title {
+    font-size: 3.5rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color: #EEEEEE;
+}
+
+#hi {
+    color: #00ADB5;
+}
+
+#lead {
+    font-size: 2rem;
+    color: #00ADB5;
+}
+
+#projects {
+    text-align: center;
+    width: 100%;
+    padding: 5rem .1rem;
+    background-color: var(--primaryColor);
+}
+
+#projects .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+#caption {
+    font-size: 2rem;
+    color: #00ADB5;
+    font-weight: bold;
+}
+
+#bottom-line {
+    height: 3px;
+    background-color: #00ADB5;
+    width: 25%;
+    margin: auto;
+    border-radius: 10px;
+    line-height: 1.2;
+}
+
+#projects .projects .box {
+    width: 25rem;
+    height: 18rem;
+    border: 5px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    border-radius: 10px;
+}
+
+#projects .projects .box a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#projects .projects .box a p {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: #EEEEEE;
+    text-align: center;
+    font-weight: bold;
+}
+
+#projects .projects .box .project-img {
+    width: 23rem;
+    height: auto;
+}
+
+.code {
+    color: #EEEEEE;
+    transition: .5s all ease;
+    font-size: 1.6rem;
+}
+
+#projects .projects .box:hover .code {
+    color: #00ADB5;
+}
+
+#contact {
+    background-color: var(--secondaryColor);
+    height: 100vh;
+    color: #EEEEEE;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#contact .container h1 {
+    font-size: 4rem;
+    color: #EEEEEE;
+    font-weight: bold;
+    padding-bottom: .1rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+#contact .container p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #00ADB5;
+}
+
+#contact .container .social>div a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #00ADB5;
+    font-weight: 700;
+    margin: 1rem 2rem;
+    transition: transform .5s;
+}
+
+#contact .container .social>div a:hover {
+    transform: translateY(-20px);
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        padding: 0rem 1rem;
+        justify-content: center;
+    }
+}
